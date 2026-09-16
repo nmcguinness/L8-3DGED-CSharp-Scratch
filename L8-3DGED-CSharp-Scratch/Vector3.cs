@@ -26,7 +26,7 @@
 
         public Vector3()
         {
-            this(0,0,0);
+            x = y = z = 0;
         }
 
         public Vector3(double x, double y, double z)
@@ -41,7 +41,7 @@
             return $"({x}, {y}, {z})";
         }
 
-        public Vector3 Clone()
+        public Vector3 ShallowCopy()
         {
             return this; //the address of the current object is returned, so any changes made to the copy will affect the original object
         }
