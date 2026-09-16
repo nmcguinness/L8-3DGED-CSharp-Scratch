@@ -59,6 +59,37 @@ namespace L8_3DGED_CSharp_Scratch
 
         //TODO - ToString, ShallowCopy, DeepCopy, Equals, GetHashCode, and any other methods you want to add to the Player class
 
+        public override string ToString()
+        {
+            return $"Actor: {actorType} at {position}";
+        }
+
+        public Player ShallowCopy()
+        {
+            return this; 
+        }
+        public Player DeepCopy()
+        {
+            return new Player(actorType, health, position.DeepCopy());
+        }
+
+        public override bool Equals(object obj)
+        {
+            Player other = obj as Player; //if this fails then null will be returned, so we need to check for null
+            //Player another = (Player)obj;  //if fails then runtime exception will be thrown
+
+            if (other == null)
+                return false;
+
+           if (ReferenceEquals(this, other)) //two variables point to the same object in memory
+                    return true;
+            
+            //you decide what properties you want to compare, in this case we will compare actorType, health, and position
+            return this.actorType == other.actorType 
+                && this.health == other.health 
+                && this.position.Equals(other.position);
+        }
+
 
     }
 }
