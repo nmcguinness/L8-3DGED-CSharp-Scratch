@@ -8,6 +8,7 @@
     {
         private double x, y, z;
 
+        #region Properties
         public double X
         {
             get { return x; }
@@ -23,7 +24,9 @@
             get { return z; }
             set { z = value < 0 ? 0 : value; } //as a demo, lets add some input validation to make sure the z value is not negative
         }
+        #endregion
 
+        #region Constructors
         public Vector3()
         {
             x = y = z = 0;
@@ -35,7 +38,9 @@
             this.y = y;
             this.z = z;
         }
+        #endregion
 
+        #region Housekeeping
         public override string ToString()
         {
             return $"({x}, {y}, {z})";
@@ -49,7 +54,37 @@
         public Vector3 DeepCopy()
         {
             return new Vector3(x, y, z); //a new object is created with the same values, so changes made to the copy will not affect the original object
+        } 
+        #endregion
+
+        public static Vector3 operator +(Vector3 v1, Vector3 v2)
+        {
+            return new Vector3(v1.X + v2.X, v1.Y + v2.Y, v1.Z + v2.Z);
+        }
+        public static Vector3 operator -(Vector3 v1, Vector3 v2)
+        {
+            return new Vector3(v1.X - v2.X, v1.Y - v2.Y, v1.Z - v2.Z);
+        }
+        public static Vector3 operator *(Vector3 v1, Vector3 v2)
+        {
+            return new Vector3(v1.X * v2.X, v1.Y * v2.Y, v1.Z * v2.Z);
+        }
+        public static Vector3 operator /(Vector3 v1, Vector3 v2)
+        {
+            if(v2.X == 0 || v2.Y == 0 || v2.Z == 0)
+                throw new DivideByZeroException("Cannot divide by zero");
+
+            return new Vector3(v1.X / v2.X, v1.Y / v2.Y, v1.Z / v2.Z);
         }
 
+        public static Vector3 operator *(Vector3 v, double scalar)
+        {
+            return new Vector3(v.X * scalar, v.Y * scalar, v.Z * scalar);
+        }
+
+        public static Vector3 operator *(double scalar, Vector3 v)
+        {
+            return new Vector3(v.X * scalar, v.Y * scalar, v.Z * scalar);
+        }
     }
 }

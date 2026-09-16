@@ -36,6 +36,11 @@ namespace L8_3DGED_CSharp_Scratch
             Console.WriteLine(p3.Equals(p1)); //false
 
 
+            //use our new operator toys
+            Vector3 v4 = 10 * v1 + v2 / 6;
+
+            Console.WriteLine($"v4: {v4}"); 
+
         }
     }
 }
