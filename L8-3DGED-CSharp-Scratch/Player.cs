@@ -66,7 +66,7 @@ namespace L8_3DGED_CSharp_Scratch
 
         public Player ShallowCopy()
         {
-            return this; 
+            return this;
         }
         public Player DeepCopy()
         {
@@ -81,12 +81,12 @@ namespace L8_3DGED_CSharp_Scratch
             if (other == null)
                 return false;
 
-           if (ReferenceEquals(this, other)) //two variables point to the same object in memory
-                    return true;
-            
+            if (ReferenceEquals(this, other)) //two variables point to the same object in memory
+                return true;
+
             //you decide what properties you want to compare, in this case we will compare actorType, health, and position
-            return this.actorType == other.actorType 
-                && this.health == other.health 
+            return this.actorType == other.actorType
+                && this.health == other.health
                 && this.position.Equals(other.position);
         }
 

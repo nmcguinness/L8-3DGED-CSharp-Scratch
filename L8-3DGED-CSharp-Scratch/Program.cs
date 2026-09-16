@@ -24,6 +24,18 @@ namespace L8_3DGED_CSharp_Scratch
 
             Console.WriteLine($"v1: {v1} and v3: {v3}"); //compare v1 and v3 to see if they are the same or different
 
+
+            Player p1 = new Player("Mage", 55, new Vector3(3, 2, 1));
+
+            Player p2 = p1;  //point to the same object in memory
+
+            Console.WriteLine(p2.Equals(p1)); //true
+
+            var p3 = new Player("thief", 44, new Vector3(5, 6, 7));
+
+            Console.WriteLine(p3.Equals(p1)); //false
+
+
         }
     }
 }
