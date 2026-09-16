@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3875C5A4-8741-407F-87D5-95372E253A3A}</ProjectGuid>
+    <ProjectGuid>{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>L8_3DGED_CSharp_Scratch</RootNamespace>
     <AssemblyName>L8-3DGED-CSharp-Scratch</AssemblyName>
