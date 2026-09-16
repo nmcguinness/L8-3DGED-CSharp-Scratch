@@ -26,9 +26,7 @@
 
         public Vector3()
         {
-            x = 0;
-            y = 0;
-            z = 0;
+            this(0,0,0);
         }
 
         public Vector3(double x, double y, double z)

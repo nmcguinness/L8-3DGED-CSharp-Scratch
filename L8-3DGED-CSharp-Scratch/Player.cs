@@ -57,7 +57,7 @@ namespace L8_3DGED_CSharp_Scratch
             Position = position;
         }
 
-        //TODO - ToString, Clone, DeepCopy, Equals, GetHashCode, and any other methods you want to add to the Player class
+        //TODO - ToString, ShallowCopy, DeepCopy, Equals, GetHashCode, and any other methods you want to add to the Player class
 
 
     }
