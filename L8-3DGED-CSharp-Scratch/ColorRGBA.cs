@@ -99,6 +99,12 @@ namespace Graphics
         #region Housekeeping
         public override bool Equals(object obj)
         {
+            ColorRGBA other  = obj as ColorRGBA;
+            if (other == null)
+                return false;
+            else
+                return r == other.R && g == other.g && b == other.b && a == other.a;
+
             return obj is ColorRGBA rGBA &&
                    r == rGBA.r &&
                    g == rGBA.g &&
@@ -108,14 +114,31 @@ namespace Graphics
 
         public override int GetHashCode()
         {
-            int hashCode = -490236692;
-            hashCode = hashCode * -1521134295 + r.GetHashCode();
-            hashCode = hashCode * -1521134295 + g.GetHashCode();
-            hashCode = hashCode * -1521134295 + b.GetHashCode();
-            hashCode = hashCode * -1521134295 + a.GetHashCode();
+            int hashCode = 1091;
+            hashCode = hashCode * 1979 + r.GetHashCode();
+            hashCode = hashCode * 1033 + g.GetHashCode();
+            hashCode = hashCode * 7 + b.GetHashCode();
+            hashCode = hashCode * 11 + a.GetHashCode();
             return hashCode;
         } 
         #endregion
+
+        public float ToLuminance()
+        {
+            ///<see cref="https://en.wikipedia.org/wiki/Relative_luminance"/>
+            return r * 0.2126f + g * 0.7152f + b * 0.0722f;
+        }
+
+        public ColorRGBA ToGreyscale()
+        {
+            float luminance = ToLuminance();
+            return new ColorRGBA(luminance, luminance, luminance, 1);
+        }
+
+
+
+
+
 
     }
 }
