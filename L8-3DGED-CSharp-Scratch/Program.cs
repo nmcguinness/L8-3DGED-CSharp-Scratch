@@ -37,7 +37,7 @@ namespace L8_3DGED_CSharp_Scratch
 
 
             //use our new operator toys
-            Vector3 v4 = 10 * v1 + v2 / 6;
+            Vector3 v4 = 10 * v1 + v2 * 6;
 
             Console.WriteLine($"v4: {v4}"); 
 
