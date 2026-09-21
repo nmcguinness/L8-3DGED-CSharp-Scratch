@@ -10,15 +10,27 @@ namespace Graphics
      */
     public class ColorRGBA
     {
+        #region Static Fields
         private static readonly float DEFAULT_RGB_CHANNEL_VALUE = 1;
         private static readonly float DEFAULT_A_CHANNEL_VALUE = 1;
+        #endregion
 
+        #region Instance Fields
         private float r, g, b, a;
+        #endregion
 
-        private static float Clamp(float value, float min, float max, float defaultValue)
-        {
-            return value >= min && value <= max ? value : defaultValue;
-        }
+        #region Static Properties
+        public static ColorRGBA White = new ColorRGBA(1, 1, 1, 1);
+        public static ColorRGBA Black = new ColorRGBA(0, 0, 0, 1);
+        public static ColorRGBA Red = new ColorRGBA(1, 0, 0, 1);
+        public static ColorRGBA Green = new ColorRGBA(0, 1, 0, 1);
+        public static ColorRGBA Blue = new ColorRGBA(0, 0, 1, 1);
+        public static ColorRGBA Grey = new ColorRGBA(0.5, 0.5, 0.5, 1); 
+        #endregion
+
+
+
+        #region Instance Properties
         public float R
         {
             get
@@ -27,7 +39,7 @@ namespace Graphics
             }
             set
             {
-                r = Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
+                r = Engine.GDMath.Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
             }
         }
 
@@ -39,7 +51,7 @@ namespace Graphics
             }
             set
             {
-                g = Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
+                g = Engine.GDMath.Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
             }
         }
 
@@ -51,7 +63,7 @@ namespace Graphics
             }
             set
             {
-                b = Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
+                b = Engine.GDMath.Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
             }
         }
 
@@ -63,8 +75,9 @@ namespace Graphics
             }
             set
             {
-                a = Clamp(value, 0, 1, DEFAULT_A_CHANNEL_VALUE);
+                a = Engine.GDMath.Clamp(value, 0, 1, DEFAULT_A_CHANNEL_VALUE);
             }
-        }
+        } 
+        #endregion
     }
 }
