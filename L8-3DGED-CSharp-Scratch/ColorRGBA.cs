@@ -25,10 +25,8 @@ namespace Graphics
         public static ColorRGBA Red = new ColorRGBA(1, 0, 0, 1);
         public static ColorRGBA Green = new ColorRGBA(0, 1, 0, 1);
         public static ColorRGBA Blue = new ColorRGBA(0, 0, 1, 1);
-        public static ColorRGBA Grey = new ColorRGBA(0.5, 0.5, 0.5, 1); 
+        public static ColorRGBA Grey = new ColorRGBA(0.5f, 0.5f, 0.5f, 1); // Add f to convert dbl to float
         #endregion
-
-
 
         #region Instance Properties
         public float R
@@ -77,7 +75,47 @@ namespace Graphics
             {
                 a = Engine.GDMath.Clamp(value, 0, 1, DEFAULT_A_CHANNEL_VALUE);
             }
+        }
+        #endregion
+
+        #region Constructors
+        public ColorRGBA()
+        {
+            r = 0;
+            g = 0;
+            b = 0;
+            a = 1;
+        }
+
+        public ColorRGBA(float r, float g, float b, float a)
+        {
+            this.r = r;
+            this.g = g;
+            this.b = b;
+            this.a = a;
+        }
+        #endregion
+
+        #region Housekeeping
+        public override bool Equals(object obj)
+        {
+            return obj is ColorRGBA rGBA &&
+                   r == rGBA.r &&
+                   g == rGBA.g &&
+                   b == rGBA.b &&
+                   a == rGBA.a;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = -490236692;
+            hashCode = hashCode * -1521134295 + r.GetHashCode();
+            hashCode = hashCode * -1521134295 + g.GetHashCode();
+            hashCode = hashCode * -1521134295 + b.GetHashCode();
+            hashCode = hashCode * -1521134295 + a.GetHashCode();
+            return hashCode;
         } 
         #endregion
+
     }
 }
