@@ -11,9 +11,14 @@ namespace Graphics
     public class ColorRGBA
     {
         private static readonly float DEFAULT_RGB_CHANNEL_VALUE = 1;
+        private static readonly float DEFAULT_A_CHANNEL_VALUE = 1;
 
         private float r, g, b, a;
 
+        private static float Clamp(float value, float min, float max, float defaultValue)
+        {
+            return value >= min && value <= max ? value : defaultValue;
+        }
         public float R
         {
             get
@@ -22,7 +27,43 @@ namespace Graphics
             }
             set
             {
-                r = value >= 0 && value <= 1 ? value : DEFAULT_RGB_CHANNEL_VALUE;
+                r = Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
+            }
+        }
+
+        public float G
+        {
+            get
+            {
+                return g;
+            }
+            set
+            {
+                g = Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
+            }
+        }
+
+        public float B
+        {
+            get
+            {
+                return b;
+            }
+            set
+            {
+                b = Clamp(value, 0, 1, DEFAULT_RGB_CHANNEL_VALUE);
+            }
+        }
+
+        public float A
+        {
+            get
+            {
+                return a;
+            }
+            set
+            {
+                a = Clamp(value, 0, 1, DEFAULT_A_CHANNEL_VALUE);
             }
         }
     }
