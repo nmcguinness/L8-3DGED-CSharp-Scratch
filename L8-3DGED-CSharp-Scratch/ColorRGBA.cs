@@ -365,6 +365,19 @@ namespace Graphics
         #region Static Methods
 
         //TODO:Add Lerp
+        public static ColorRGBA Lerp(ColorRGBA c1, ColorRGBA c2, float t)
+        {
+            return new ColorRGBA(
+                Lerp(c1.r, c2.r, t),
+                Lerp(c1.g, c2.g, t),
+                Lerp(c1.b, c2.b, t),
+                1);
+        }
+
+        public static float Lerp(float min, float max, float t)
+        {
+            return min + (max - min) * t;
+        }
 
         //NMCG: Dont forget to....
 
