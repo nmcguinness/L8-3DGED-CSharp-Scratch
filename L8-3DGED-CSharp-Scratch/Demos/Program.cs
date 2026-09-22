@@ -34,17 +34,42 @@ namespace L8_3DGED_CSharp_Scratch
             DemoColorArithmetic();
             DemoColorEquality();
             DemoColorLuminanceAndGreyscale();
-            DemoColorLerp();
-
+            
             DemoSwap();
             DemoOut();
+            DemoInterface();
+
+            DemoColorLerp();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
 
+        private static void DemoInterface()
+        {
+            PrintHeading("DemoInterface: damageable demo");
+
+            Explosion e = new Explosion();
+
+            e.Add(new Enemy(100, false));
+            e.Add(new Enemy(50, true));
+            e.Add(new Barrel(30));
+
+            // Polymorphism: an interface reference can point at any object that implements that interface
+            IDamageable d1 = new Enemy(40, false);
+            e.Add(d1);
+
+            e.Detonate(20);
+
+            Console.WriteLine("Health of each target after the explosion:");
+            for (int i = 0; i < e.Targets.Count; i++)
+                Console.WriteLine(e.Targets[i]);
+        }
+
         private static void DemoOut()
         {
+            PrintHeading("DemoOut: out demo");
+
             Player p1 = new Player("Warrior", 100, new Vector3(0, 0, 0));
 
             // Damage the player's health
@@ -67,6 +92,8 @@ namespace L8_3DGED_CSharp_Scratch
 
         private static void DemoSwap()
         {
+            PrintHeading("DemoSwap: Ref demo");
+
             int x = 5, y = 20;
 
             GDMath.Swap(ref x, ref y); //Converts value type to reference type using ref keyword

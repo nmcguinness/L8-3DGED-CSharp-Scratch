@@ -9,6 +9,8 @@ namespace L8_3DGED_CSharp_Scratch
     {
         private readonly List<IDamageable> _targets = new List<IDamageable>();
 
+        public List<IDamageable> Targets => _targets;
+
         /// <summary>
         /// Registers a target to be damaged when this explosion detonates.
         /// </summary>

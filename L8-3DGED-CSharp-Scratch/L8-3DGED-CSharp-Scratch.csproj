@@ -49,15 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ColorRGBA.cs" />
-    <Compile Include="GDMath.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Demos\Barrel.cs" />
+    <Compile Include="Demos\ColorRGBA.cs" />
+    <Compile Include="Demos\Enemy.cs" />
+    <Compile Include="Exercises\InterfacesExA.cs" />
+    <Compile Include="Demos\Explosion.cs" />
+    <Compile Include="Demos\GDMath.cs" />
+    <Compile Include="Demos\IDamageable.cs" />
+    <Compile Include="Demos\Player.cs" />
+    <Compile Include="Demos\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vector3.cs" />
+    <Compile Include="Demos\Vector3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
