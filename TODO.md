@@ -6,6 +6,6 @@ I can add links to sites [here](www.dkit.ie)
 ## Sub-headings
 
 ## Tasks
-- [ ] Task 1
-- [ ] Task 2
+- [x] Task 1
+- [x] Task 2
 - [ ] Task 3
