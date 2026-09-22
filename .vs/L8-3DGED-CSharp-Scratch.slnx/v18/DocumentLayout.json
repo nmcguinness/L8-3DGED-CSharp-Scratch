@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\colorrgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\colorrgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\gdmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\gdmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\l8-3dged-csharp-scratch\\vector3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\vector3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\l8-3dged-csharp-scratch\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\l8-3dged-csharp-scratch\\vector3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\vector3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\colorrgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\colorrgba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\gdmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\gdmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,41 +50,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "GDMath.cs",
               "DocumentMoniker": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\GDMath.cs",
               "RelativeDocumentMoniker": "L8-3DGED-CSharp-Scratch\\GDMath.cs",
-              "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\GDMath.cs",
-              "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\GDMath.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\GDMath.cs*",
+              "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\GDMath.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T14:09:00.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ColorRGBA.cs",
               "DocumentMoniker": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\ColorRGBA.cs",
               "RelativeDocumentMoniker": "L8-3DGED-CSharp-Scratch\\ColorRGBA.cs",
               "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\ColorRGBA.cs",
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\ColorRGBA.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAA9wHsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAIMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T13:47:36.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\Player.cs",
               "RelativeDocumentMoniker": "L8-3DGED-CSharp-Scratch\\Player.cs",
               "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\Player.cs",
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Player.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAmwEwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T12:11:26.335Z"
+              "WhenOpened": "2026-09-16T12:11:26.335Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -94,20 +95,20 @@
               "RelativeDocumentMoniker": "L8-3DGED-CSharp-Scratch\\Vector3.cs",
               "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\Vector3.cs",
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Vector3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T12:11:23.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\Program.cs",
               "RelativeDocumentMoniker": "L8-3DGED-CSharp-Scratch\\Program.cs",
               "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\Program.cs",
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIBBwAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA0wBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T10:08:21.701Z",
               "EditorCaption": ""
