@@ -257,5 +257,36 @@ namespace L8_3DGED_CSharp_Scratch
         }
 
         #endregion
+
+        #region Class-Specific Methods
+
+        //public void DoDamage(int damage)
+        //{
+        //    Health -= damage;
+        //}
+
+        public int DoDamage(int damage)
+        {
+            Health -= damage;
+            return Health;
+        }
+
+        public void DoDamage(int damage, out int newHealth, out bool isAlive)
+        {
+            //Health -= damage;
+            //newHealth = Health;
+            //isAlive = Health > 0;
+
+            health -= damage;
+            newHealth = health;
+            isAlive = health > 0;
+        }
+
+
+
+        #endregion
+
+
+
     }
 }

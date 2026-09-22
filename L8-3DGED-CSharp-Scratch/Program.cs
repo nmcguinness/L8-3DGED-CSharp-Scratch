@@ -52,6 +52,17 @@ namespace L8_3DGED_CSharp_Scratch
 
             // Show the player's health before the method call
             Console.WriteLine(p1);
+
+            //Player::DoDamage
+            p1.DoDamage(20, out int newHealth, out bool isAlive);
+            Console.WriteLine($"new health is {newHealth}");
+            Console.WriteLine($"is alive? {isAlive}");
+
+            int newHealthValue;
+            bool AmIAlive;
+            p1.DoDamage(30, out newHealthValue, out AmIAlive);
+            Console.WriteLine($"new health is {newHealthValue}");
+            Console.WriteLine($"is alive? {AmIAlive}");
         }
 
         private static void DemoSwap()
