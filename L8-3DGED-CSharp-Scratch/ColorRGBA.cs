@@ -1,4 +1,6 @@
 using Engine;
+using L8_3DGED_CSharp_Scratch;
+using System.Runtime.CompilerServices;
 
 namespace Graphics
 {
@@ -368,16 +370,19 @@ namespace Graphics
         public static ColorRGBA Lerp(ColorRGBA c1, ColorRGBA c2, float t)
         {
             return new ColorRGBA(
-                Lerp(c1.r, c2.r, t),
-                Lerp(c1.g, c2.g, t),
-                Lerp(c1.b, c2.b, t),
-                1);
+                GDMath.Lerp(c1.r, c2.r, t),
+                GDMath.Lerp(c1.g, c2.g, t),
+                GDMath.Lerp(c1.b, c2.b, t), 1); 
+        }
+        public Vector3 ToVector3()
+        {
+            return new Vector3(r, g, b);
+        }
+        public ColorRGBA ToColor(Vector3 rgb, float a)
+        {
+            return new ColorRGBA((float)rgb.X, (float)rgb.Y, (float)rgb.Z, a);
         }
 
-        public static float Lerp(float min, float max, float t)
-        {
-            return min + (max - min) * t;
-        }
 
         //NMCG: Dont forget to....
 

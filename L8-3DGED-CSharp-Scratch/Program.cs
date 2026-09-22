@@ -1,4 +1,5 @@
 using System;
+using Engine;
 using Graphics;
 
 namespace L8_3DGED_CSharp_Scratch
@@ -35,8 +36,31 @@ namespace L8_3DGED_CSharp_Scratch
             DemoColorLuminanceAndGreyscale();
             DemoColorLerp();
 
+            DemoSwap();
+            DemoOut();
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
+        }
+
+        private static void DemoOut()
+        {
+            Player p1 = new Player("Warrior", 100, new Vector3(0, 0, 0));
+
+            // Damage the player's health
+            p1.Health -= 10;
+
+            // Show the player's health before the method call
+            Console.WriteLine(p1);
+        }
+
+        private static void DemoSwap()
+        {
+            int x = 5, y = 20;
+
+            GDMath.Swap(ref x, ref y); //Converts value type to reference type using ref keyword
+
+            Console.WriteLine($"x: {x}, y: {y}");
         }
 
         #endregion

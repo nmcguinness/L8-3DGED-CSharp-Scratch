@@ -1,3 +1,6 @@
+using L8_3DGED_CSharp_Scratch;
+using System;
+
 namespace Engine
 {
     /// <summary>
@@ -6,6 +9,38 @@ namespace Engine
     public static class GDMath
     {
         #region Static Methods
+
+        public static void Swap(ref int x, ref int y)
+        {
+            Console.WriteLine($"Inside before - x: {x}, y: {y}");
+
+            int temp = x;
+            x = y;
+            y = temp;
+
+            Console.WriteLine($"Inside after - x: {x}, y: {y}");
+        }
+
+        public static float Lerp(float min, float max, float t)
+        {
+            return min + (max - min) * t;
+        }
+
+        public static double Lerp(double min, double max, double t)
+        {
+            return min + (max - min) * t;
+        }
+
+        public static Vector3 Lerp(Vector3 min, Vector3 max, float t)
+        {
+            return new Vector3(Lerp(min.X, max.X, t), 
+                Lerp(min.Y, max.Y, t), 
+                Lerp(min.Z, max.Z, t));
+        }           
+
+
+
+
 
         /// <summary>
         /// Validates that a value lies within an inclusive range and, if it does not, substitutes a caller-supplied default.
