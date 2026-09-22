@@ -7,6 +7,11 @@ namespace L8_3DGED_CSharp_Scratch
     /// Entry point for the console application. Each language feature is demonstrated by its own
     /// self-contained method so that a demo can be run, read or commented out in isolation.
     /// </summary>
+    /// <remarks>
+    /// Keeping Main to a list of calls is a deliberate teaching pattern: a method should do one thing,
+    /// and a 60-line Main that mixes vectors, players and colours makes it impossible to see where one
+    /// idea ends and the next begins. The same instinct applies later in Update() in Unity.
+    /// </remarks>
     internal class Program
     {
         #region Main
@@ -132,7 +137,17 @@ namespace L8_3DGED_CSharp_Scratch
             Console.WriteLine($"p2.Equals(p1): {p2.Equals(p1)}   (same object)");
             Console.WriteLine($"p3.Equals(p1): {p3.Equals(p1)}   (different values)");
             Console.WriteLine($"p4.Equals(p1): {p4.Equals(p1)}   (different object, equal values)");
-            Console.WriteLine($"p4 == p1     : {p4 == p1}   (Player does NOT overload ==, so this is a reference test)");
+            Console.WriteLine($"p4 == p1     : {p4 == p1}   (== is overloaded, so this is a value test)");
+            Console.WriteLine($"p4 != p3     : {p4 != p3}");
+            Console.WriteLine($"ReferenceEquals(p4, p1): {ReferenceEquals(p4, p1)}   (still two distinct objects)");
+            Console.WriteLine($"p1 == null   : {p1 == null}   (null handled without an exception)");
+            Console.WriteLine($"Matching hashes: {p4.GetHashCode() == p1.GetHashCode()}   (required when Equals is true)");
+
+            // Careful: because == now compares values, the only way left to ask "are these the same
+            // object?" is ReferenceEquals. Mutating one of two equal players immediately separates
+            // them, which is exactly the hazard of value equality on a mutable entity type.
+            p4.Health = 10;
+            Console.WriteLine($"After p4.Health = 10 -> p4 == p1: {p4 == p1}");
 
             // Health is clamped by the property setter, and IsAlive is derived rather than stored
             p1.Health = -50;
@@ -270,7 +285,7 @@ namespace L8_3DGED_CSharp_Scratch
             ColorRGBA start = ColorRGBA.Red;
             ColorRGBA end = ColorRGBA.Blue;
 
-            //TODO: Implement the linear interpolation demonstration
+            //TODO: Implement linear interpolation demonstration
         }
 
         #endregion

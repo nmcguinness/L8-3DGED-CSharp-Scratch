@@ -1,3 +1,5 @@
+using Graphics;
+
 namespace L8_3DGED_CSharp_Scratch
 {
     /// <summary>
@@ -173,9 +175,9 @@ namespace L8_3DGED_CSharp_Scratch
             if (ReferenceEquals(this, other))
                 return true;
 
-            return this.actorType == other.actorType
-                && this.health == other.health
-                && this.position.Equals(other.position);
+            return actorType == other.actorType
+                && health == other.health
+                && position.Equals(other.position);
         }
 
         /// <summary>
@@ -195,6 +197,63 @@ namespace L8_3DGED_CSharp_Scratch
             hashCode = hashCode * 31 + health.GetHashCode();
             hashCode = hashCode * 31 + (position == null ? 0 : position.GetHashCode());
             return hashCode;
+        }
+
+        #endregion
+
+        #region Comparison Operators
+
+        /// <summary>
+        /// Determines whether two players have the same actor type, health and position.
+        /// </summary>
+        /// <param name="p1">The left-hand player, which may be null.</param>
+        /// <param name="p2">The right-hand player, which may be null.</param>
+        /// <returns>True if both are null, or both are non-null and hold equal values.</returns>
+        /// <remarks>
+        /// Overloading == changes the meaning of every existing p1 == p2 in the codebase from
+        /// "the same object" to "equal values". That is a deliberate and far-reaching decision:
+        /// for an entity type such as a player, two distinct actors that happen to share a name,
+        /// a health value and a position are arguably NOT the same player, and reference equality
+        /// may well have been the more honest default. Compare with Vector3 and ColorRGBA, where
+        /// the object genuinely is nothing more than its values and so value equality is natural.
+        ///
+        /// ReferenceEquals is used for the null tests because writing "p1 == null" inside this
+        /// method would call the operator recursively until the stack overflows. The
+        /// ReferenceEquals(p1, p2) test that follows is a fast path for the common case where both
+        /// variables point at the same object.
+        ///
+        /// The position comparison uses Vector3's own == overload, so equality composes: each type
+        /// is responsible for defining what equality means for itself.
+        /// </remarks>
+        public static bool operator ==(Player p1, Player p2)
+        {
+            if (ReferenceEquals(p1, null) && ReferenceEquals(p2, null))
+                return true;
+
+            if (ReferenceEquals(p1, null) || ReferenceEquals(p2, null))
+                return false;
+
+            if (ReferenceEquals(p1, p2))
+                return true;
+
+            return p1.actorType == p2.actorType
+                && p1.health == p2.health
+                && p1.position == p2.position;
+        }
+
+        /// <summary>
+        /// Determines whether two players differ in actor type, health or position.
+        /// </summary>
+        /// <param name="p1">The left-hand player, which may be null.</param>
+        /// <param name="p2">The right-hand player, which may be null.</param>
+        /// <returns>True if the players are not equal.</returns>
+        /// <remarks>
+        /// C# requires == and != to be overloaded as a pair; omitting one is a compile-time error,
+        /// not merely a style problem. Defining != in terms of == keeps the two answers consistent.
+        /// </remarks>
+        public static bool operator !=(Player p1, Player p2)
+        {
+            return !(p1 == p2);
         }
 
         #endregion
