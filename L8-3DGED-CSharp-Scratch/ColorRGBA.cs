@@ -81,7 +81,7 @@ namespace Graphics
         public float R
         {
             get { return r; }
-            set { r = GDMath.Clamp(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_RGB_CHANNEL_VALUE); }
+            set { r = GDMath.ClampToDefault(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_RGB_CHANNEL_VALUE); }
         }
 
         /// <summary>
@@ -90,7 +90,7 @@ namespace Graphics
         public float G
         {
             get { return g; }
-            set { g = GDMath.Clamp(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_RGB_CHANNEL_VALUE); }
+            set { g = GDMath.ClampToDefault(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_RGB_CHANNEL_VALUE); }
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ namespace Graphics
         public float B
         {
             get { return b; }
-            set { b = GDMath.Clamp(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_RGB_CHANNEL_VALUE); }
+            set { b = GDMath.ClampToDefault(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_RGB_CHANNEL_VALUE); }
         }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace Graphics
         public float A
         {
             get { return a; }
-            set { a = GDMath.Clamp(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_A_CHANNEL_VALUE); }
+            set { a = GDMath.ClampToDefault(value, MIN_CHANNEL_VALUE, MAX_CHANNEL_VALUE, DEFAULT_A_CHANNEL_VALUE); }
         }
 
         #endregion
@@ -365,6 +365,8 @@ namespace Graphics
         #region Static Methods
 
         //TODO:Add Lerp
+
+        //NMCG: Dont forget to....
 
         /// <summary>
         /// Clamps a single channel value to the valid 0 to 1 range.

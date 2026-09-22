@@ -21,7 +21,7 @@ namespace Engine
         /// value indicates programmer error and a known-good fallback is wanted; use
         /// <see cref="Clamp(float, float, float)"/> when the value should be pulled to the nearest bound.
         /// </remarks>
-        public static float Clamp(float value, float min, float max, float defaultValue)
+        public static float ClampToDefault(float value, float min, float max, float defaultValue)
         {
             return value >= min && value <= max ? value : defaultValue;
         }
