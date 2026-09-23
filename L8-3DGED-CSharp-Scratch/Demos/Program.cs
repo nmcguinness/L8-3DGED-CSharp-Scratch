@@ -1,6 +1,10 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Net.Http.Headers;
 using Engine;
 using Graphics;
+using L8_3DGED_CSharp_Scratch.Demos;
 
 namespace L8_3DGED_CSharp_Scratch
 {
@@ -22,7 +26,7 @@ namespace L8_3DGED_CSharp_Scratch
         /// </summary>
         /// <param name="args">Command-line arguments (unused).</param>
         static void Main(string[] args)
-        {
+        { 
             DemoVectorShallowVsDeepCopy();
             DemoVectorOperators();
             DemoVectorEquality();
@@ -39,10 +43,30 @@ namespace L8_3DGED_CSharp_Scratch
             DemoOut();
             DemoInterface();
 
+            DemoInterfaceAndStrategy();
             DemoColorLerp();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
+        }
+
+        private static void DemoInterfaceAndStrategy()
+        {
+            List<Player> pList = new List<Player>();
+            pList.Add(new Player("thief", 55, new Vector3(1, 5, 10)));
+            pList.Add(new Player("mage", 99, new Vector3(2,4,6)));
+
+            IAttackStrategy attackStrategy
+                = new ActorProximityStrategy("mage", 20);
+
+            // Quick and dirty test of the strategy
+            Console.WriteLine(attackStrategy.FilterBy(pList));
+
+            Turret mainGateTurret = new Turret(new Vector3(10, 10, 5), 
+                attackStrategy);
+
+            mainGateTurret.Attack(pList);
+
         }
 
         private static void DemoInterface()

@@ -52,6 +52,9 @@
     <Compile Include="Demos\Barrel.cs" />
     <Compile Include="Demos\ColorRGBA.cs" />
     <Compile Include="Demos\Enemy.cs" />
+    <Compile Include="Demos\IAttackPlayer.cs" />
+    <Compile Include="Demos\IAttackStrategy.cs" />
+    <Compile Include="Demos\Turret.cs" />
     <Compile Include="Exercises\InterfacesExA.cs" />
     <Compile Include="Demos\Explosion.cs" />
     <Compile Include="Demos\GDMath.cs" />
