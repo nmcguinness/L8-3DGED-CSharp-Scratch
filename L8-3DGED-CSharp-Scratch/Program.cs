@@ -51,8 +51,23 @@ namespace L8_3DGED_CSharp_Scratch
             DemoDelegate();
 
 
+            DifficultyLevel dl = new DifficultyLevel(1, 5);
+
+            dl.OnDifficultyChanged += Dl_OnDifficultyChanged;
+            
+            //crisis
+            dl.SetDifficult(-1);
+
+            dl.OnDifficultyChanged -= Dl_OnDifficultyChanged;
+
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
+        }
+
+        private static void Dl_OnDifficultyChanged(int newDiff)
+        {
+            Console.WriteLine($"Reacting to new difficulty {newDiff}");
         }
 
         //a delegate holds address of 1 or more methods/functions
