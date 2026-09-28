@@ -60,18 +60,29 @@ namespace L8_3DGED_CSharp_Scratch
 
         private static void DemoDelegate()
         {
+            BigBoss sid = new BigBoss();
+
             HealthBar hb = new HealthBar(5);
             hb.Refresh(1, PickupType.Health /*,"health", "Health", "Heath"*/);
 
             //How do we tell lots of systems about this pickup?
             PickupHandler handler = hb.Refresh;
-            handler += NotifyHealth;
+            handler += PlayPickupSound;
+            handler += sid.Notify;
 
             //payoff comes here
             handler(3, PickupType.Ammo);
+
+            //remove me from notification list
+            handler -= sid.Notify;
+
+            //because later in level i pickup another thing!
+            handler(3, PickupType.Ammo);
+
+
         }
 
-        public static void NotifyHealth(int amount, PickupType type)
+        public static void PlayPickupSound(int amount, PickupType type)
         {
             Console.WriteLine($"AudioManager: {amount} of {type}");
         }
