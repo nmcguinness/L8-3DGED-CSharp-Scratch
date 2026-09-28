@@ -2,14 +2,14 @@
 
 namespace L8_3DGED_CSharp_Scratch
 {
-    internal class HealthPickup : PickupBase
+    public class HealthPickup : PickupBase
     {
         public HealthPickup(int amount) : base(amount)
         {
 
         }
 
-        protected override void OnCollected()
+        protected override void OnCollected()  //concrete impl. of abstract
         {
             Console.WriteLine("Making health pickup sound!");
         }

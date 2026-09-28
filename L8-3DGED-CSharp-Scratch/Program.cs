@@ -46,8 +46,53 @@ namespace L8_3DGED_CSharp_Scratch
             DemoInterfaceAndStrategy();
             DemoColorLerp();
 
+            DemoAbstractClasses();
+
+            DemoDelegate();
+
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
+        }
+
+        //a delegate holds address of 1 or more methods/functions
+        public delegate void PickupHandler(int amount, PickupType type);
+
+        private static void DemoDelegate()
+        {
+            HealthBar hb = new HealthBar(5);
+            hb.Refresh(1, PickupType.Health /*,"health", "Health", "Heath"*/);
+
+            //How do we tell lots of systems about this pickup?
+            PickupHandler handler = hb.Refresh;
+            handler += NotifyHealth;
+
+            //payoff comes here
+            handler(3, PickupType.Ammo);
+        }
+
+        public static void NotifyHealth(int amount, PickupType type)
+        {
+            Console.WriteLine($"AudioManager: {amount} of {type}");
+        }
+
+        private static void DemoAbstractClasses()
+        {
+            List<PickupBase> pickups = new List<PickupBase>
+            {
+                new HealthPickup(25),
+                new AmmoPickup(12)
+            };
+
+            //List<PickupBase> pickups = new List<PickupBase>();
+            //pickups.Add(new HealthPickup(25));
+            //pickups.Add(new AmmoPickup(12));
+
+            foreach (PickupBase pickup in pickups) //read-only for loop
+            {
+                //ERROR: is this plasma rifle ammo, then delete?
+                pickup.Collect();
+            }
         }
 
         private static void DemoInterfaceAndStrategy()
