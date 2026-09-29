@@ -4,11 +4,11 @@ namespace L8_3DGED_CSharp_Scratch.Demos
 {
     public class EnemyManager
     {
-        /*TODO*/
+        private Enemy _enemyArchetype;
 
-        public EnemyManager(/*TODO*/)
+        public EnemyManager(Enemy enemyArchetype)
         {
-            /*TODO*/
+            _enemyArchetype = enemyArchetype;
         }
 
         /*TODO*/

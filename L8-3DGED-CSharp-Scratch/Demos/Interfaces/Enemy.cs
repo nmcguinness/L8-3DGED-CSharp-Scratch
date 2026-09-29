@@ -20,6 +20,20 @@
         public bool IsAlerted { get => _isAlerted; protected set => _isAlerted = value; }
         public static int MinAggressionLevel { get => _minAggressionLevel; set => _minAggressionLevel = value; }
         public static int MaxAggressionLevel { get => _maxAggressionLevel; set => _maxAggressionLevel = value; }
+        public static Enemy Barbarian
+        {
+            get
+            {
+                return new Enemy(100, _minAggressionLevel, false);
+            }
+        }
+        public static Enemy Golem
+        {
+            get
+            {
+                return new Enemy(300, _maxAggressionLevel, true);
+            }
+        }
 
         /// <inheritdoc />
         public void TakeDamage(int amount)

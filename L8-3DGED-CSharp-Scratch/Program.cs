@@ -100,7 +100,7 @@ namespace L8_3DGED_CSharp_Scratch
             _audioManager.AddPickupCue(PickupType.Ammo, "ammo.wav");
             _audioManager.AddPickupCue(PickupType.Shield, "shield.wav");
 
-            _enemyManager = new EnemyManager(/*TODO*/);
+            _enemyManager = new EnemyManager(Enemy.Barbarian);
         }
 
         /// <summary>

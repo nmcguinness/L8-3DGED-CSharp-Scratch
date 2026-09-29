@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\demos\\events\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\l8-3dged-csharp-scratch\\demos\\events\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\demos\\events\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\demos\\events\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\l8-3dged-csharp-scratch\\demos\\events\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\demos\\events\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|c:\\work\\2026-27\\3dged\\repos\\l8-3dged-csharp-scratch\\l8-3dged-csharp-scratch\\demos\\interfaces\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\l8-3dged-csharp-scratch\\demos\\interfaces\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5AB3240-6E77-4333-9BCB-6B4B305E6AE6}|L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch.csproj|solutionrelative:l8-3dged-csharp-scratch\\demos\\interfaces\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "L8-3DGED-CSharp-Scratch\\Program.cs",
               "ToolTip": "C:\\Work\\2026-27\\3DGED\\Repos\\L8-3DGED-CSharp-Scratch\\L8-3DGED-CSharp-Scratch\\Program.cs",
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAuwFIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-16T10:08:21.701Z",
               "IsPinned": true,
@@ -72,8 +72,7 @@
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Demos\\Interfaces\\Enemy.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T07:22:46.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-29T07:22:46.846Z"
             },
             {
               "$type": "Document",
@@ -85,8 +84,7 @@
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Demos\\Events\\EnemyManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T07:21:20.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-29T07:21:20.278Z"
             },
             {
               "$type": "Document",
@@ -98,8 +96,7 @@
               "RelativeToolTip": "L8-3DGED-CSharp-Scratch\\Demos\\Events\\AudioManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAtwBUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T07:15:38.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-29T07:15:38.175Z"
             }
           ]
         }
