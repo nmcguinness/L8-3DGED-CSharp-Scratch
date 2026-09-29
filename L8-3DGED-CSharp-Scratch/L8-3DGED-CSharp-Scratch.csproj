@@ -49,25 +49,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmmoPickup.cs" />
-    <Compile Include="Demos\Barrel.cs" />
-    <Compile Include="Demos\BigBoss.cs" />
-    <Compile Include="Demos\ColorRGBA.cs" />
-    <Compile Include="Demos\Enemy.cs" />
-    <Compile Include="Demos\HealthBar.cs" />
-    <Compile Include="Demos\IAttackPlayer.cs" />
-    <Compile Include="Demos\IAttackStrategy.cs" />
-    <Compile Include="Demos\Turret.cs" />
+    <Compile Include="Demos\Abstract\AmmoPickup.cs" />
+    <Compile Include="Demos\Events\AudioManager.cs" />
+    <Compile Include="Demos\Enums\PickupType.cs" />
+    <Compile Include="Demos\Events\EnemyManager.cs" />
+    <Compile Include="Demos\Interfaces\Barrel.cs" />
+    <Compile Include="Demos\Events\BigBoss.cs" />
+    <Compile Include="Demos\Classes\ColorRGBA.cs" />
+    <Compile Include="Demos\Events\DifficultyLevel.cs" />
+    <Compile Include="Demos\Interfaces\Enemy.cs" />
+    <Compile Include="Demos\Events\HealthBar.cs" />
+    <Compile Include="Demos\Interfaces\IAttackPlayer.cs" />
+    <Compile Include="Demos\Interfaces\IAttackStrategy.cs" />
+    <Compile Include="Demos\Classes\Turret.cs" />
     <Compile Include="Exercises\InterfacesExA.cs" />
-    <Compile Include="Demos\Explosion.cs" />
-    <Compile Include="Demos\GDMath.cs" />
-    <Compile Include="Demos\IDamageable.cs" />
-    <Compile Include="Demos\Player.cs" />
-    <Compile Include="HealthPickup.cs" />
-    <Compile Include="PickupBase.cs" />
+    <Compile Include="Demos\Interfaces\Explosion.cs" />
+    <Compile Include="Demos\Utilities\GDMath.cs" />
+    <Compile Include="Demos\Interfaces\IDamageable.cs" />
+    <Compile Include="Demos\Classes\Player.cs" />
+    <Compile Include="Demos\Abstract\HealthPickup.cs" />
+    <Compile Include="Demos\Abstract\PickupBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Demos\Vector3.cs" />
+    <Compile Include="Demos\Classes\Vector3.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

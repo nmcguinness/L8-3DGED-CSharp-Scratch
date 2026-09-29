@@ -1,6 +1,7 @@
-﻿namespace L8_3DGED_CSharp_Scratch.Demos
+﻿using System;
+
+namespace L8_3DGED_CSharp_Scratch.Demos
 {
-    public enum PickupType { Health, Ammo, Shield, Flag};
 
     /// <summary>
     /// Represents a drawn UI healthbar in Unity/Unreal/Godot
@@ -27,11 +28,15 @@
             //int newHealth = _currentHealth + delta;
             //_currentHealth = newHealth <= _maxHealth ? newHealth : _maxHealth;
 
+      
             //Version C
             _currentHealth += 
                 (_currentHealth + delta <= _maxHealth)
                 ? delta 
                 : _maxHealth;
+
+            Console.WriteLine($"Setting new difficulty to {_currentHealth}");
+
         }
     }
 }
